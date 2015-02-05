@@ -1,0 +1,248 @@
+@import url('demo.css');
+@import url('font-awesome.css');
+
+
+html { height: 100%; }
+
+body {
+    font-family: Calibri;
+    background: #ddd url(../../images/login/bg.jpg) repeat top left;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    overflow:auto;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.clr {
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+
+.main {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main .logo{
+	margin:110px auto 0 0;
+}
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.log-form {
+    /* Size & position */
+    width: 300px;
+    padding: 10px;
+	margin:0 auto;
+    position: relative; /* For the submit button positioning */
+
+    /* Styles */
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.3), 
+        0 3px 7px rgba(0, 0, 0, 0.3), 
+        inset 0 1px rgba(255,255,255,1),
+        inset 0 -3px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    background: white; /* Fallback */
+    background: -moz-linear-gradient(#eeefef, #ffffff 10%);
+    background: -ms-linear-gradient(#eeefef, #ffffff 10%);
+    background: -o-linear-gradient(#eeefef, #ffffff 10%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
+    background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+.log-form .field {
+    position: relative; /* For the icon positioning */
+}
+
+.log-form .field i {
+    /* Size and position */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+
+    /* Styles */
+    color: #777777;
+    text-align: center;
+    line-height: 42px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    pointer-events: none;
+}
+
+.log-form input[type=text],
+.log-form input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    /* Size and position */
+    width: 100%;
+    padding: 10px 18px 10px 45px;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.1),
+        inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.log-form input[type=text] {
+    margin-bottom: 10px;
+}
+
+.log-form input[type=text]:hover ~ i,
+.log-form input[type=password]:hover ~ i {
+    color: #52cfeb;
+}
+
+.log-form input[type=text]:focus ~ i,
+.log-form input[type=password]:focus ~ i {
+    color: #42A2BC;
+}
+
+.log-form input[type=text]:focus,
+.log-form input[type=password]:focus,
+.log-form button[type=submit]:focus {
+    outline: none;
+}
+
+.log-form .submit {
+    /* Size and position */
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 17px;
+    right: -25px;
+    padding: 10px;
+    z-index: 2;
+
+    /* Styles */
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 2px rgba(0,0,0,0.1),
+        0 3px 2px rgba(0,0,0,0.1),
+        inset 0 -3px 2px rgba(0,0,0,0.2);
+}
+
+.log-form .submit:after {
+    /* Size and position */
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -2px;
+    left: 30px;
+
+    /* Styles */
+    background: #ffffff;
+    
+    /* Other masks trick */
+    box-shadow: 0 62px white, -32px 31px white;
+}
+
+.log-form button {
+    /* Size and position */
+    width: 100%;
+    height: 100%;
+    margin-top: -1px;
+
+    /* Icon styles */
+    font-size: 1.4em;
+    line-height: 1.75;
+    color: white;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    border-radius: inherit;
+    background: #52cfeb; /* Fallback */
+    background: -moz-linear-gradient(#52cfeb, #42A2BC);
+    background: -ms-linear-gradient(#52cfeb, #42A2BC);
+    background: -o-linear-gradient(#52cfeb, #42A2BC);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#52cfeb), to(#42A2BC));
+    background: -webkit-linear-gradient(#52cfeb, #42A2BC);
+    background: linear-gradient(#52cfeb, #42A2BC);
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        0 1px 2px rgba(0,0,0,0.35),
+        inset 0 3px 2px rgba(255,255,255,0.2),
+        inset 0 -3px 2px rgba(0,0,0,0.1);
+
+    cursor: pointer;
+}
+
+.log-form button:hover,
+.log-form button[type=submit]:focus {
+    background: #52cfeb;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.log-form button:active {
+    background: #42A2BC;
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.3),
+        inset 0 3px 4px rgba(0,0,0,0.3);
+}
+
+.kopiright{
+	position:fixed;
+	color:#B4D1B6;
+	bottom:0px;
+	right:0px;
+	float:right;
+	padding:5px;
+}

@@ -1,0 +1,48 @@
+/*
+Grid
+Grid, garida, pola, atau kisi-kisi adalah susunan kerangka yang dibangun atas garis dengan posisi vertikal dan horizontal, grid dipergunakan sebagai alat bantu untuk menyusun atau mengatur objek dalam kontek perencanaan dalam ruang gambar dua dimensi.
+
+*/
+
+/* Bagian Containers
+--------------------------------------------------------------------------------*/
+
+.container_12{width: 100%;}
+
+/* Bagian Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_12{display: inline;float: left;margin-left: 1%;margin-right: 1%;}
+
+.container_12 .grid_12{width: 98%;}
+
+/* Bagian Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+
+.alpha{margin-left: 0;}
+.omega{margin-right: 0;}
+
+/* Bagian Clear Floated Elements
+--------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

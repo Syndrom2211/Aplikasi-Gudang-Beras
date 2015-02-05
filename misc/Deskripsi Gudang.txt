@@ -1,0 +1,135 @@
+[DONE] tampil option:
+saldo awal
+pengadaan
+pengeluaran
+
+
+[DONE] relasi :
+tbl_jenisberas: jenis_beras => tbl_pengadaan
+tbl_jenisberas: jenis_beras => tbl_pengeluaran
+tbl_jenisberas: jenis_beras => tbl_saldo
+tbl_pelanggan: kode_pelanggan => tbl_pengeluaran
+tbl_pemasok: kode_pemasok => tbl_pengadaan
+tbl_pemasok: kode_pemasok => tbl_saldo
+tbl_satuan: kode_satuan => tbl_saldo
+tbl_satuan: kode_satuan => tbl_pengeluaran
+tbl_satuan: kode_satuan => tbl_pengadaan
+
+[DONE] Edit & Hapus :
+Jenis Beras
+Pelanggan
+Pemasok
+Satuan
+
+[DONE] Yang belum Input:
+Pengadaan Beras
+Pengeluaran Beras
+
+[DONE] Yang belum Laporan:
+Persediaan Beras
+
+
+[DONE] Yang belum Datepicker:
+Pengadaan Beras
+Pengeluaran BEras
+Saldo Awal
+
+[DONE] Yang belum lihat data:
+Pelanggan
+Pemasok
+Satuan
+
+[DONE] Pengeluaran harus ada Tanggal
+[DONE] Pengadaan Harus ada tanggal
+[DONE] Saldo harus ada tanggal
+
+[DONE]
+PHP > Tanggal
+Pengadaan.a = Kode Jenis Beras, Saldo Awal, Jumlah Pengadaan
+Pengeluaran.b = Jumlah Pengeluaran
+Pengadaan.a = Saldo AKhir, Satuan
+
+[DONE] Limit di buat 2 , label dan input
+
+[DONE] Saldo Di buat LIhat Data
+
+Syarat Ujikom
+1. PC LAPTOP dan XAMPP
+2. Algoritma atau Flowchart
+3.  SQL, Koneksi, Form
+4. Trigger
+5. HAsil
+6. Link satu sama lain aktif
+7. Sampai akhirnya ke laporan
+8. Warna minimal tidak terlalu mencolok
+9. Warna hitam dan merah hindari
+
+mencari algoritma flowchart inventory
+10.  Sikap , keselamatan data, keamanan
+
+cgkamalshah.blogspot.com
+
+[DONE] Limit nya tetap
+[DONE] Saldo akhir ke saldo_akhir
+[DONE] sebagai catatan saldo akhir ga boleh lebih dari limit
+
+Pengadaan :
+[DONE] Saldo Awal di panggil langsung berdasarkan id jenis beras
+[DONE] Limit di panggil langsung
+
+Pengeluaran :
+[DONE] Saldo Awal di panggil langsung berdasarkan id jenis beras
+[DONE] Limit di panggil langsung
+
+[DONE] Tambahin Laporan Pemasok sama Pelanggan
+
+[DONE] Saldo aKHIR akan terupdate dengan saldo yang ada di tbl_saldo awal
+
+[DONE] saldo di akses nya saat pengadaan sama pengeluaran
+[DONE] saldo awal yang ada di persediaan di tampilkan disitu
+[DONE] dan nanti jadi saldo akhir .. 
+[DONE] dan begitu di simpan nanti di update yang di saldo awal, dan begitupun dengan tanggal nya .. masuk juga yang ada di gudang
+
+[DONE] yang di pengadaan yang keterangan nya di ganti jadi menyerahkan
+[DONE] kalo yang di pengeluaran yang keterangan nya di ganti jadi mengambil
+
+[DONE] Saldo harus pake tanggal di databasenya
+[DONE] YG tanggal dipanggil dari pengadaan
+[DONE] jml_saldo_awal di ganti menjadi saldo
+[DONE] Menu saldo awal di ganti namanya jadi stock opname
+
+[DONE] jadi bukan tiap jenis yang di lihat, saldo itu jumlah total saldo yang ada di gudang saja
+
+[DONE] di tabel saldo harus ada auto increment nya, biar nanti ngambilnya saldo yang paling akhir
+
+[DONE] Menu satuan harus di hapus saja, karena cuman satu
+[DONE] di bawah pertugas tambahin tanggal masuk
+[DONE] kalo di pengeluaran tambahin tanggal keluar di bawah petugas
+[DONE] tanggal yang di saldo awal yang di tambahkan pertamanya tanggal sekarang dan kedua kalinya baru dari pengadaan
+[DONE] tanggal yang ada di saldo awal ,, tanggal sekarang sama kaya stock opname
+[DONE] yang di pengadaan ke saldo awal nambah jangan update
+
+[DONE] membuat hak akses user / pegawai 
+[DONE] email pake type attribut
+[DONE] tambahin menu di flowchart stock opname
+[DONE] adain hapus di saldo tampil bila salah ketik
+
+[DONE]
+forbidden page for user :
+- tambah-admin.php (y)
+- lihat-admin.php (y)
+- ubah-admin.php (y)
+- input-saldo-awal.php (y)
+- input-jenis-beras.php (y)
+- input-pelanggan.php (y)
+- input-pemasok.php (y)
+- input-satuan.php (y)
+- input-pengadaan-beras.php (y)
+- input-pengeluaran-beras.php (y)
+- lihat saldo tombol hapus (y)
+- lihat jenis beras tombol edit dan hapus (y)
+- lihat pelanggan tombol edit dan hapus (y)
+- lihat pemasok tombol edit dan hapus (y)
+- tampil-edit-jenisberas.php (y)
+- tampil-edit-pelanggan.php (y)
+- tampil-edit-pemasok.php (y)
